@@ -1,0 +1,18 @@
+<!-- Displaying pitch macro -->
+<div class="container">
+    {% macro displayPitches(pitch_list) %}
+    {% for pitch in pitch_list %}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h2> {{ pitch.title}} </h2>
+                </div>
+                <div class="panel-body">
+                    <p> {{ pitch.pitch }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% endmacro %}
+    </div>
