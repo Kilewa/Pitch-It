@@ -1,3 +1,9 @@
 body{
     background-color: burlywood;
 }
+
+.col-md-8{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
