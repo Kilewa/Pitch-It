@@ -5,17 +5,14 @@
 {% block content %}
 <div class="container">
     <div class="row">
-
         <div class="col-md-6">
-
             {{ wtf.quick_form(comment_form) }}
         </div>
-
         <div class="col-md-6">
             <h2>COMMENTS</h2>
             {% for commen in comment  %}
             <ul>
-                <li> {{commen.comment}}</li>
+                <li class='jumbotron' style="list-style: none;"> {{commen.comment}}</li>
             </ul>
             {% endfor %}
         </div>

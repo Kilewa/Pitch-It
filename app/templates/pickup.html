@@ -7,7 +7,7 @@
 
 <div class="container">
 
-    <h1>Pickup PITCHES!!</h1>
+    <h1>PICKUP PITCHES!!</h1>
 
     <div class="col-md-6">
         <h2>Pitches Posted</h2>
@@ -17,14 +17,15 @@
             <p> {{ pitch.pitch }}</p>
         </div>
         {% endfor %}
-        <button class="btn btn-default"><a href="/pickup/pitch"> Post a product pitch</a></button>
+        <button class="btn btn-default"><a href="/pickup/pitch"> Post a Pickupline</a></button>
 
     </div>
+    <h2>Pickup Comments</h2>
     <div class="col-md-6">
 
         {{macro.displayPitches(pitches)}}
 
-        <button class="btn btn danger"> <a href="/pickup/comment">comment</a></button>
+        <button class="btn btn danger"> <a href="/pickup/comment">Post a Comment</a></button>
 
     </div>
 </div>

@@ -11,14 +11,19 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
+                {% if current_user.is_authenticated %}
+
                 <li class="active"><a href="{{url_for('main.index')}}">Home</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{url_for('main.product')}}">Product Pitch</a></li>
+                        <li><a href="{{url_for('main.product')}}">Tech</a></li>
+                        <li><a href="{{url_for('main.pickup')}}">Pickup lines</a></li>
 
-                        <li><a href="{{url_for('main.pickup')}}">Pickup Lines</a></li>
-
+                </li>
+                {% else %}
+                {%endif%}
+                
 
                     </ul>
                 </li>
@@ -35,10 +40,11 @@
                 </li>
                 {% else %}
                 <li><a href="{{url_for('auth.login')}}"><span class="glyphicon glyphicon-log-in"></span> Sign In</a>
+                <li><a href="{{url_for('auth.register')}}"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li>    
                 </li>
                 {%endif%}
-                <li><a href="{{url_for('auth.register')}}"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-                </li>
+                
             </ul>
         </div>
     </div>
