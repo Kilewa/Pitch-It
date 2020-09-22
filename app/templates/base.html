@@ -1,5 +1,9 @@
 {% extends 'bootstrap/base.html'%}
 
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+{% endblock %}
 
 <!-- Navbar block  -->
 {% block navbar %}
@@ -12,7 +16,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title> 60 SECONDS PITCH </title>
+    <title>PITCHBOOK</title>
 
 </head>
 

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+body{
+  background-color: #1f1f50;
+  font-family: 'Nosifer', cursive;
+  background-image: url(../bg/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.well{
+  background-color: #351E29;
+  border: none;
+  outline: none;
+}
+
+.well h1{
+  /* font-family: 'Monoton', cursive; */
+  font-family: 'Nosifer', cursive;
+  text-align: center;
+  color: #6DD3CE;
+}
+
+.navbar{
+  color: red;
+}

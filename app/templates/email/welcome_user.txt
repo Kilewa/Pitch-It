@@ -1,4 +1,4 @@
 Hello {{user.username}}
 Welcome to Pitch It!
 
-We have confirmed your login. Pitch it ou!
+We have confirmed your login. Pitch it out!

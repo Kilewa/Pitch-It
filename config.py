@@ -5,6 +5,9 @@ class Config:
     General configuration parent class
     '''
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://kilewa:george@localhost/pitch'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False 
+
+
     SECRET_KEY = os.environ.get('SECRET_KEY')
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     #email configurations
@@ -22,7 +25,7 @@ class ProdConfig(Config):
         Config: The parent configuration class with General configuration settings
     '''
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-
+    
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://kilewa:george@localhost/pitch_test'
 
