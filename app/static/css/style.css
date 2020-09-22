@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 
 body{
-  background-color: #1f1f50;
   font-family: 'Nosifer', cursive;
   background-image: url(../bg/bg-1.jpg);
   background-position: center;
@@ -23,8 +22,4 @@ body{
   font-family: 'Nosifer', cursive;
   text-align: center;
   color: #6DD3CE;
-}
-
-.register{
-  background-color: brown;
 }

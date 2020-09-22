@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 body{
-    background-color: burlywood;
+    font-family: 'Acme', sans-serif;
+    background-image: url(../bg/register.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
 }
 
 .col-md-8{
