@@ -1,5 +1,4 @@
-
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" style="background-color: #402039;">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -13,7 +12,7 @@
             <ul class="nav navbar-nav">
                 {% if current_user.is_authenticated %}
 
-                <li class="active"><a href="{{url_for('main.index')}}">Home</a></li>
+                <li><a href="{{url_for('main.index')}}">Home</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
                     <ul class="dropdown-menu">

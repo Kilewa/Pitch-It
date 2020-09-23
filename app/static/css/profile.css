@@ -5,12 +5,3 @@ body{
     font-family: 'Acme', sans-serif;
     font-size: 18px;
 }
-
-.tech{
-    background-color: #351E29;
-    height: 150px;
-    margin: 30px;
-    padding-left: 30px;
-    padding-top: 5px;
-    border-radius: 5px;
-}
