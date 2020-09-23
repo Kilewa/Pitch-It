@@ -4,7 +4,7 @@ class Config:
     '''
     General configuration parent class
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://kilewa:george@localhost/pitch'
+    
     SQLALCHEMY_TRACK_MODIFICATIONS = False 
 
 
