@@ -1,0 +1,14 @@
+
+body{
+    color:  #6DD3CE;
+    background-color: #020231;
+}
+
+.tech{
+    background-color: #351E29;
+    height: 150px;
+    margin: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-radius: 5px;
+}

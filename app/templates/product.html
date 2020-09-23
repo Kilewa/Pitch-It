@@ -1,16 +1,24 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/product.css')}}">
+{% endblock %}
+
 
 {% block content %}
 
 
 <div class="container">
     <div class="row">
-        <h1>TECH PITCHES!!</h1>
-        <button type="button" class="btn btn-default"><a href="/product/pitch"> Post a tech pitch</a></button>
+        <div class="tech">
+            <h1>TECH PITCHES!!</h1>
+            <button type="button" class="btn btn-default"><a href="/product/pitch"> Post a tech pitch</a></button>
 
-        <button class="btn btn danger"> <a href="/product/comment">comment</a></button>
+            <button class="btn btn danger"> <a href="/product/comment">View Comments</a></button>
+        </div>
+        
         <div class="col-md-9">
             <h2>Pitches Posted</h2>
 
